@@ -3,7 +3,7 @@
 set scriptpath (pwd)
 
 # Down the last running theme
-if bash -f "/tmp/leftwm-theme-down"
+if test -e "/tmp/leftwm-theme-down"
     /tmp/leftwm-theme-down
     rm /tmp/leftwm-theme-down
 end
