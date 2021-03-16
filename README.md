@@ -14,10 +14,10 @@ launcher	: Rofi
 
 # Dependencies
 
-- [LeftWM] (https://github.com/leftwm/leftwm)
-- [Polybar] (https://github.com/polybar/polybar)
-- [Rofi] (https://github.com/davatorium/rofi)
-- [Fish shell] (https://github.com/fish-shell/fish-shell)
+- [LeftWM](https://github.com/leftwm/leftwm)
+- [Polybar](https://github.com/polybar/polybar)
+- [Rofi](https://github.com/davatorium/rofi)
+- [Fish shell](https://github.com/fish-shell/fish-shell)
 
 # Installation
 
