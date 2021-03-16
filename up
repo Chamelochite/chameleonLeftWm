@@ -1,0 +1,28 @@
+#! /usr/bin/env fish
+
+set scriptpath (pwd)
+
+# Down the last running theme
+if bash -f "/tmp/leftwm-theme-down"
+    /tmp/leftwm-theme-down
+    rm /tmp/leftwm-theme-down
+end
+
+ln -s $scriptpath/down /tmp/leftwm-theme-down
+
+# Set the background if feh exists
+if type -q feh
+    feh --bg-scale $scriptpath/ChameleonBGDark2.bmp &
+else
+    echo "feh not found"
+end
+
+# Set the theme.toml config
+echo "LoadTheme $SCRIPTPATH/theme.toml" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
+
+if type -q polybar
+    polybar -c $scriptpath/polybar.config bottom &
+    polybar -c $scriptpath/polybar.config top &
+else
+    echo "polybar not found"
+end
