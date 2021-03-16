@@ -1,0 +1,7 @@
+#! /usr/bin/env fish
+
+set scriptpath (pwd)
+
+echo "UnloadTheme" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
+
+pkill polybar
