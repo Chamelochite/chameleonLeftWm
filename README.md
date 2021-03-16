@@ -6,9 +6,9 @@ This is the config files for the chameleon theme for LeftWM
 Note that my up and down scripts are written for the **fish** shell. Without fish they won't work.
 
 ```
-DE			: Nixos
-WM			: LeftWm
-bar			: Polybar
+DE		: Nixos
+WM		: LeftWm
+bar		: Polybar
 launcher	: Rofi
 ```
 
