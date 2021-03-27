@@ -1,7 +1,8 @@
-#! /usr/bin/env fish
+#! /usr/bin/fish
 
-set scriptpath (pwd)
+set scriptpath (status dirname)
 
+echo $scriptpath
 # Down the last running theme
 if test -e "/tmp/leftwm-theme-down"
     /tmp/leftwm-theme-down
